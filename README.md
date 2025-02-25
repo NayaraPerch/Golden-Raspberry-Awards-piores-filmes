@@ -2,7 +2,7 @@
 
 **Pré-requisitos**
 
-- [Java JDK 11+](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
+- [Java JDK 17]
 - [Maven 3.6.3+](https://maven.apache.org/download.cgi)
 - [Git](https://git-scm.com/)
 
