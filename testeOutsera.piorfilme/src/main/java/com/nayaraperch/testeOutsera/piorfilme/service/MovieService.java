@@ -31,14 +31,11 @@ public class MovieService {
     private ProducerRepository producerRepository;
 
     @PostConstruct
-    @Transactional
     public void init() {
         List<Movie> movies = readMoviesFromCSV("/movielist.csv");
         movieRepository.saveAll(movies);
         System.out.println("Movies Saved!");
     }
-
-    @Transactional
     private List<Movie> readMoviesFromCSV(String filePath) {
         List<Movie> movies = new ArrayList<>();
         System.out.println("Reading movies from CSV file: " + filePath);
