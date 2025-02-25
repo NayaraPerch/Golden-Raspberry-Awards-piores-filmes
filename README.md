@@ -10,7 +10,7 @@
 
 git clone https://github.com/NayaraPerch/Golden-Raspberry-Awards-piores-filmes.git
 
-cd Golden-Raspberry-Awards-piores-filmes
+cd Golden-Raspberry-Awards-piores-filmes/testeOutsera.piorfilme
 
 **Rodando a aplicação**
 
