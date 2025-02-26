@@ -21,6 +21,7 @@ public class ProducerService {
 
 
     public PrizeIntervalResponse getPrizeInterval() {
+        System.out.println("Searching for winners producers...");
         List<Movie> winningMovies = movieRepository.findByWinnerTrue();
         Map<Producer, List<Year>> producerWins = winningMovies.stream()
                 .flatMap(movie -> movie.getProducers().stream().map(producer -> new WinnerProducers(producer, movie.getReleaseYear())))
@@ -28,7 +29,7 @@ public class ProducerService {
 
         List<PrizeInterval> maxList = new ArrayList<>();
         List<PrizeInterval> minList = new ArrayList<>();
-
+        System.out.println("Calculating prize intervals...");
         for (Map.Entry<Producer, List<Year>> entry : producerWins.entrySet()) {
             Producer producer = entry.getKey();
             List<Year> years = entry.getValue();
