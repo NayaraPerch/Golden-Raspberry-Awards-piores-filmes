@@ -21,3 +21,6 @@ mvn spring-boot:run
 **Rodando os testes de integração**
 
 mvn verify
+
+**Endpoint da chamada**
+http://localhost:8080/producers/prizeInterval
