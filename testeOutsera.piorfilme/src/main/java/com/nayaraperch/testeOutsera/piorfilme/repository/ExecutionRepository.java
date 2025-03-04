@@ -7,5 +7,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ExecutionRepository extends JpaRepository<Execution, Long> {
-    //Execution findBytExecutionEnd();
+    Execution findFirstByOrderByExecutionEndDesc();
 }
